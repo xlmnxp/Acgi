@@ -5,8 +5,8 @@ import "Srl/System.alusus";
 def Acgi: module {
     use Srl;
     func initHeader(): bool{
-        Srl.print("Content-Type: text/html\n");
-        Srl.print("Cache-Control: no-cache\n\n");
+        Console.print("Content-Type: text/html\n");
+        Console.print("Cache-Control: no-cache\n\n");
         
         return 1;
     }
