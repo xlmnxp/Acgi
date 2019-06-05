@@ -5,11 +5,12 @@ import "Srl/System.alusus";
 def Acgi: module {
     use Srl;
     func initHeader(): bool{
-        Console.print("Content-Type: text/html\n");
-        Console.print("Cache-Control: no-cache\n\n");
+        Console.print("Content-Type: text/html\r\n");
+        Console.print("Cache-Control: no-cache\r\n\r\n");
         
         return 1;
-    }
+    };
+    
     // QUERY_STRING
     func getQueryString(): array[Char] {
         return System.getEnv("QUERY_STRING");
