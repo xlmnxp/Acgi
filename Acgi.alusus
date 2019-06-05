@@ -1,4 +1,3 @@
-#!/usr/bin/env alusus
 import "Srl/Console.alusus";
 import "Srl/System.alusus";
 
@@ -10,99 +9,99 @@ def Acgi: module {
         
         return 1;
     };
-    
+
     // QUERY_STRING
     func getQueryString(): array[Char] {
-        return System.getEnv("QUERY_STRING");
+        return System.getEnv("QUERY_STRING")~cast[array[Char]];
     };
 
     // REQUEST_METHOD
     func getRequestMethod(): array[Char] {
-        return System.getEnv("REQUEST_METHOD");
+        return System.getEnv("REQUEST_METHOD")~cast[array[Char]];
     };
 
     // CONTENT_TYPE
     func getContentType(): array[Char] {
-        return System.getEnv("CONTENT_TYPE");
+        return System.getEnv("CONTENT_TYPE")~cast[array[Char]];
     };
 
     // CONTENT_LENGTH
     func getContentLength(): array[Char] {
-        return System.getEnv("CONTENT_LENGTH");
+        return System.getEnv("CONTENT_LENGTH")~cast[array[Char]];
     };
 
     // SCRIPT_NAME
     func getScriptName(): array[Char] {
-        return System.getEnv("SCRIPT_NAME");
+        return System.getEnv("SCRIPT_NAME")~cast[array[Char]];
     };
 
     // REQUEST_URI
     func getRequestUri(): array[Char] {
-        return System.getEnv("REQUEST_URI");
+        return System.getEnv("REQUEST_URI")~cast[array[Char]];
     };
 
     // DOCUMENT_URI
     func getDocumentUri(): array[Char] {
-        return System.getEnv("DOCUMENT_URI");
+        return System.getEnv("DOCUMENT_URI")~cast[array[Char]];
     };
 
     // DOCUMENT_ROOT
     func getDocumentRoot(): array[Char] {
-        return System.getEnv("DOCUMENT_ROOT");
+        return System.getEnv("DOCUMENT_ROOT")~cast[array[Char]];
     };
 
     // SERVER_PROTOCOL
     func getServerProtocol(): array[Char] {
-        return System.getEnv("SERVER_PROTOCOL");
+        return System.getEnv("SERVER_PROTOCOL")~cast[array[Char]];
     };
 
     // REQUEST_SCHEME
     func getRequestScheme(): array[Char] {
-        return System.getEnv("REQUEST_SCHEME");
+        return System.getEnv("REQUEST_SCHEME")~cast[array[Char]];
     };
 
     // HTTPS
     func getHttps(): array[Char] {
-        return System.getEnv("HTTPS");
+        return System.getEnv("HTTPS")~cast[array[Char]];
     };
 
     // GATEWAY_INTERFACE
     func getGatewayInterface(): array[Char] {
-        return System.getEnv("GATEWAY_INTERFACE");
+        return System.getEnv("GATEWAY_INTERFACE")~cast[array[Char]];
     };
 
     // SERVER_SOFTWARE
     func getServerSoftware(): array[Char] {
-        return System.getEnv("SERVER_SOFTWARE");
+        return System.getEnv("SERVER_SOFTWARE")~cast[array[Char]];
     };
 
     // REMOTE_ADDR
     func getRemoteAddr(): array[Char] {
-        return System.getEnv("REMOTE_ADDR");
+        return System.getEnv("REMOTE_ADDR")~cast[array[Char]];
     };
 
     // REMOTE_PORT
     func getRemotePort(): array[Char] {
-        return System.getEnv("REMOTE_PORT");
+        return System.getEnv("REMOTE_PORT")~cast[array[Char]];
     };
 
     // SERVER_ADDR
     func getServerAddr(): array[Char] {
-        return System.getEnv("SERVER_ADDR");
+        return System.getEnv("SERVER_ADDR")~cast[array[Char]];
     };
 
     // SERVER_PORT
     func getServerPort(): array[Char] {
-        return System.getEnv("SERVER_PORT");
+        return System.getEnv("SERVER_PORT")~cast[array[Char]];
     };
 
     // SERVER_NAME
     func getServerName(): array[Char] {
-        return System.getEnv("SERVER_NAME");
+        return System.getEnv("SERVER_NAME")~cast[array[Char]];
     };
 
     // REDIRECT_STATUS
     func getRedirectStatus(): array[Char] {
-        return System.getEnv("REDIRECT_STATUS");
+        return System.getEnv("REDIRECT_STATUS")~cast[array[Char]];
     };
 };
