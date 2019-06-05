@@ -11,97 +11,97 @@ def Acgi: module {
     };
 
     // QUERY_STRING
-    func getQueryString(): array[Char] {
-        return System.getEnv("QUERY_STRING")~cast[array[Char]];
+    func getQueryString(): ptr[Word[8]] {
+        return System.getEnv("QUERY_STRING");
     };
 
     // REQUEST_METHOD
-    func getRequestMethod(): array[Char] {
-        return System.getEnv("REQUEST_METHOD")~cast[array[Char]];
+    func getRequestMethod(): ptr[Word[8]] {
+        return System.getEnv("REQUEST_METHOD");
     };
 
     // CONTENT_TYPE
-    func getContentType(): array[Char] {
-        return System.getEnv("CONTENT_TYPE")~cast[array[Char]];
+    func getContentType(): ptr[Word[8]] {
+        return System.getEnv("CONTENT_TYPE");
     };
 
     // CONTENT_LENGTH
-    func getContentLength(): array[Char] {
-        return System.getEnv("CONTENT_LENGTH")~cast[array[Char]];
+    func getContentLength(): ptr[Word[8]] {
+        return System.getEnv("CONTENT_LENGTH");
     };
 
     // SCRIPT_NAME
-    func getScriptName(): array[Char] {
-        return System.getEnv("SCRIPT_NAME")~cast[array[Char]];
+    func getScriptName(): ptr[Word[8]] {
+        return System.getEnv("SCRIPT_NAME");
     };
 
     // REQUEST_URI
-    func getRequestUri(): array[Char] {
-        return System.getEnv("REQUEST_URI")~cast[array[Char]];
+    func getRequestUri(): ptr[Word[8]] {
+        return System.getEnv("REQUEST_URI");
     };
 
     // DOCUMENT_URI
-    func getDocumentUri(): array[Char] {
-        return System.getEnv("DOCUMENT_URI")~cast[array[Char]];
+    func getDocumentUri(): ptr[Word[8]] {
+        return System.getEnv("DOCUMENT_URI");
     };
 
     // DOCUMENT_ROOT
-    func getDocumentRoot(): array[Char] {
-        return System.getEnv("DOCUMENT_ROOT")~cast[array[Char]];
+    func getDocumentRoot(): ptr[Word[8]] {
+        return System.getEnv("DOCUMENT_ROOT");
     };
 
     // SERVER_PROTOCOL
-    func getServerProtocol(): array[Char] {
-        return System.getEnv("SERVER_PROTOCOL")~cast[array[Char]];
+    func getServerProtocol(): ptr[Word[8]] {
+        return System.getEnv("SERVER_PROTOCOL");
     };
 
     // REQUEST_SCHEME
-    func getRequestScheme(): array[Char] {
-        return System.getEnv("REQUEST_SCHEME")~cast[array[Char]];
+    func getRequestScheme(): ptr[Word[8]] {
+        return System.getEnv("REQUEST_SCHEME");
     };
 
     // HTTPS
-    func getHttps(): array[Char] {
-        return System.getEnv("HTTPS")~cast[array[Char]];
+    func getHttps(): ptr[Word[8]] {
+        return System.getEnv("HTTPS");
     };
 
     // GATEWAY_INTERFACE
-    func getGatewayInterface(): array[Char] {
-        return System.getEnv("GATEWAY_INTERFACE")~cast[array[Char]];
+    func getGatewayInterface(): ptr[Word[8]] {
+        return System.getEnv("GATEWAY_INTERFACE");
     };
 
     // SERVER_SOFTWARE
-    func getServerSoftware(): array[Char] {
-        return System.getEnv("SERVER_SOFTWARE")~cast[array[Char]];
+    func getServerSoftware(): ptr[Word[8]] {
+        return System.getEnv("SERVER_SOFTWARE");
     };
 
     // REMOTE_ADDR
-    func getRemoteAddr(): array[Char] {
-        return System.getEnv("REMOTE_ADDR")~cast[array[Char]];
+    func getRemoteAddr(): ptr[Word[8]] {
+        return System.getEnv("REMOTE_ADDR");
     };
 
     // REMOTE_PORT
-    func getRemotePort(): array[Char] {
-        return System.getEnv("REMOTE_PORT")~cast[array[Char]];
+    func getRemotePort(): ptr[Word[8]] {
+        return System.getEnv("REMOTE_PORT");
     };
 
     // SERVER_ADDR
-    func getServerAddr(): array[Char] {
-        return System.getEnv("SERVER_ADDR")~cast[array[Char]];
+    func getServerAddr(): ptr[Word[8]] {
+        return System.getEnv("SERVER_ADDR");
     };
 
     // SERVER_PORT
-    func getServerPort(): array[Char] {
-        return System.getEnv("SERVER_PORT")~cast[array[Char]];
+    func getServerPort(): ptr[Word[8]] {
+        return System.getEnv("SERVER_PORT");
     };
 
     // SERVER_NAME
-    func getServerName(): array[Char] {
-        return System.getEnv("SERVER_NAME")~cast[array[Char]];
+    func getServerName(): ptr[Word[8]] {
+        return System.getEnv("SERVER_NAME");
     };
 
     // REDIRECT_STATUS
-    func getRedirectStatus(): array[Char] {
-        return System.getEnv("REDIRECT_STATUS")~cast[array[Char]];
+    func getRedirectStatus(): ptr[Word[8]] {
+        return System.getEnv("REDIRECT_STATUS");
     };
 };
